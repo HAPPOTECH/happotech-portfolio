@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T12:00:00Z",
+  "title": "Design System: HAPPOTECH",
+  "extensions": {
+    "colorMeta": {
+      "bleu-roi": { "role": "primary", "displayName": "Royal Blue", "canonical": "#1560f0", "tonalRamp": ["#051a47", "#0a2c73", "#0f3fa3", "#1560f0", "#3f7ef4", "#6f9ef7", "#a3c1fa", "#d6e4fd"] },
+      "azur": { "role": "primary", "displayName": "Azure", "canonical": "#2a9dff", "tonalRamp": ["#062a4d", "#0b4580", "#1063b3", "#2a9dff", "#56b1ff", "#82c5ff", "#b0daff", "#dbeeff"] },
+      "cyan-signal": { "role": "primary", "displayName": "Signal Cyan", "canonical": "#19d3ff", "tonalRamp": ["#053a47", "#095c70", "#0e8aa8", "#19d3ff", "#4bdcff", "#7de6ff", "#b0f0ff", "#dff9ff"] },
+      "encre": { "role": "neutral", "displayName": "Ink", "canonical": "#04060b", "tonalRamp": ["#04060b", "#080b13", "#0d121c", "#1f2a3d", "#3a4557", "#5f6a7e", "#9aa4b6", "#eef2f8"] },
+      "nuit": { "role": "neutral", "displayName": "Night", "canonical": "#080b13", "tonalRamp": ["#04060b", "#080b13", "#0d121c", "#1f2a3d", "#3a4557", "#5f6a7e", "#9aa4b6", "#eef2f8"] },
+      "ardoise": { "role": "neutral", "displayName": "Slate", "canonical": "#0d121c", "tonalRamp": ["#04060b", "#080b13", "#0d121c", "#1f2a3d", "#3a4557", "#5f6a7e", "#9aa4b6", "#eef2f8"] },
+      "texte": { "role": "neutral", "displayName": "Paper White", "canonical": "#eef2f8", "tonalRamp": ["#1f2a3d", "#3a4557", "#5f6a7e", "#7d879a", "#9aa4b6", "#c4cbd7", "#dde2ea", "#eef2f8"] },
+      "brume": { "role": "neutral", "displayName": "Mist", "canonical": "#9aa4b6", "tonalRamp": ["#1f2a3d", "#3a4557", "#5f6a7e", "#7d879a", "#9aa4b6", "#c4cbd7", "#dde2ea", "#eef2f8"] },
+      "cendre": { "role": "neutral", "displayName": "Ash", "canonical": "#7d879a", "tonalRamp": ["#1f2a3d", "#3a4557", "#5f6a7e", "#7d879a", "#9aa4b6", "#c4cbd7", "#dde2ea", "#eef2f8"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only; 2.5rem / 3.75rem / 4.5rem across breakpoints, two lines, key words in Azure, letter-by-letter entrance." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles, sentence case; 2.25rem to 3rem, up to 4.5rem for the contact close." },
+      "title": { "displayName": "Title", "purpose": "Service cards, method steps, project names." },
+      "lettering": { "displayName": "Lettering", "purpose": "Expanded capitals and wordmark moments only: nav wordmark, design-service word stack, closing HAPPOTECH band." },
+      "body": { "displayName": "Body", "purpose": "Intros and paragraphs in Mist, 42 to 60ch." },
+      "body-sm": { "displayName": "Small", "purpose": "Nav links, compact button labels, captions." },
+      "label": { "displayName": "Label", "purpose": "Geist Mono tags and window-chrome file names." }
+    },
+    "shadows": [
+      { "name": "glass-lift", "value": "inset 0 1px 0 rgb(255 255 255 / 0.08), 0 24px 60px -24px rgb(0 0 0 / 0.7)", "purpose": "Built into every glass panel." },
+      { "name": "media-drop", "value": "0 30px 80px -30px rgb(0 0 0 / 0.9)", "purpose": "Desktop capture frames in project cases." },
+      { "name": "phone-drop", "value": "0 24px 60px -12px rgb(0 0 0 / 0.85)", "purpose": "Phone capture overlapping the desktop frame." },
+      { "name": "stack-edge", "value": "0 -24px 80px -40px rgb(0 0 0 / 0.9)", "purpose": "Project cases casting upward onto the card beneath." },
+      { "name": "rail-glow", "value": "0 0 14px rgb(42 157 255 / 0.8)", "purpose": "The scroll-drawn method rail." },
+      { "name": "node-reached", "value": "0 0 0 5px rgb(25 211 255 / 0.12), 0 0 22px rgb(25 211 255 / 0.6)", "purpose": "Method node once the rail reaches it." },
+      { "name": "status-dot", "value": "0 0 12px rgb(25 211 255 / 0.9)", "purpose": "Availability and live-status dots." }
+    ],
+    "motion": [
+      { "name": "ease-sortie", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single easing curve for every transition and entrance." },
+      { "name": "entrance", "value": "0.9s ease-sortie, rise 24-32px, once in view", "purpose": "Section and card entrances." },
+      { "name": "state", "value": "300ms ease-sortie", "purpose": "Button fill, arrow nudge, press scale 0.98." },
+      { "name": "spotlight", "value": "opacity 0.4s ease-sortie; 420px ring, 520px wash at pointer", "purpose": "Pointer-following border light on explorable glass cards." },
+      { "name": "capture-light", "value": "filter and overlay 700ms ease-sortie", "purpose": "Monochrome blue capture returning to true colour on hover." },
+      { "name": "letter-reveal", "value": "0.8s ease-sortie, 28ms stagger, from y 0.55em and blur 10px", "purpose": "Hero headline letters." },
+      { "name": "pointer-spring", "value": "stiffness 90, damping 22, mass 0.6", "purpose": "Hero light and monogram tilt following the pointer." },
+      { "name": "rail-spring", "value": "stiffness 120, damping 28", "purpose": "Method rail drawn by scroll progress." },
+      { "name": "defile", "value": "38s linear infinite, translateX(-50%)", "purpose": "Client logo marquee, paused on hover." },
+      { "name": "pouls", "value": "2.4s ease-sortie infinite, scale 1 to 2.6, fade out", "purpose": "Pulse ring behind live-status dots." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Paper White pill for the main action; arrow nudges on hover, presses to 98%.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Voir nos projets <svg width=\"17\" height=\"17\" viewBox=\"0 0 256 256\" fill=\"currentColor\"><path d=\"M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 9999px; background: var(--color-texte, #eef2f8); color: var(--color-encre, #04060b); font-family: 'Geist Variable', system-ui, sans-serif; font-weight: 500; text-decoration: none; box-shadow: 0 12px 40px -12px rgb(42 157 255 / 0.55); transition: transform 300ms cubic-bezier(0.16,1,0.3,1), background-color 300ms cubic-bezier(0.16,1,0.3,1), box-shadow 300ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary svg { transition: transform 300ms; } .ds-btn-primary:hover { background: #fff; box-shadow: 0 16px 48px -12px rgb(42 157 255 / 0.8); } .ds-btn-primary:hover svg { transform: translateY(2px); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid #19d3ff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Glass Button",
+      "kind": "button",
+      "refersTo": "button-glass",
+      "description": "Secondary CTA and floating pills in the glass material.",
+      "html": "<a class=\"ds-btn-glass\" href=\"#\">Démarrer un projet <svg width=\"17\" height=\"17\" viewBox=\"0 0 256 256\" fill=\"currentColor\"><path d=\"M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z\"/></svg></a>",
+      "css": ".ds-btn-glass { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 9999px; color: #eef2f8; font-family: 'Geist Variable', system-ui, sans-serif; font-weight: 500; text-decoration: none; background: linear-gradient(180deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025)); border: 1px solid rgb(255 255 255 / 0.1); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 24px 60px -24px rgb(0 0 0 / 0.7); backdrop-filter: blur(18px) saturate(140%); transition: transform 300ms cubic-bezier(0.16,1,0.3,1), background-color 300ms; } .ds-btn-glass svg { transition: transform 300ms; } .ds-btn-glass:hover { background-color: rgb(255 255 255 / 0.1); } .ds-btn-glass:hover svg { transform: translateX(2px); } .ds-btn-glass:active { transform: scale(0.98); } .ds-btn-glass:focus-visible { outline: 2px solid #19d3ff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Compact low-emphasis pill inside cards, e.g. an outbound site link.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">Voir le site <svg width=\"15\" height=\"15\" viewBox=\"0 0 256 256\" fill=\"currentColor\"><path d=\"M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z\"/></svg></a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 9999px; border: 1px solid rgb(255 255 255 / 0.15); background: rgb(255 255 255 / 0.06); color: #eef2f8; font-family: 'Geist Variable', system-ui, sans-serif; font-size: 14px; font-weight: 500; text-decoration: none; transition: background-color 150ms; } .ds-btn-quiet svg { transition: transform 300ms; } .ds-btn-quiet:hover { background: rgb(255 255 255 / 0.1); } .ds-btn-quiet:hover svg { transform: translate(2px, -2px); } .ds-btn-quiet:focus-visible { outline: 2px solid #19d3ff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Geist Mono technology and service labels.",
+      "html": "<ul class=\"ds-tags\"><li class=\"ds-tag\">React</li><li class=\"ds-tag\">Supabase</li><li class=\"ds-tag\">Vercel</li></ul>",
+      "css": ".ds-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; } .ds-tag { padding: 4px 12px; border-radius: 9999px; border: 1px solid rgb(255 255 255 / 0.1); background: rgb(255 255 255 / 0.04); color: #9aa4b6; font-family: 'Geist Mono Variable', ui-monospace, monospace; font-size: 11px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-bar",
+      "description": "Floating glass bar with wordmark, centred links with a sliding active pill, and a primary pill.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-mark\">HAPPO<span>TECH</span></span><ul class=\"ds-nav-links\"><li><a href=\"#\" class=\"is-active\">Services</a></li><li><a href=\"#\">Projets</a></li><li><a href=\"#\">À propos</a></li><li><a href=\"#\">Méthode</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Démarrer un projet</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; padding: 0 10px 0 20px; border-radius: 16px; background: linear-gradient(180deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025)), rgb(8 11 19 / 0.75); border: 1px solid rgb(255 255 255 / 0.1); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 24px 60px -24px rgb(0 0 0 / 0.7); backdrop-filter: blur(18px) saturate(140%); } .ds-nav-mark { font-family: 'Archivo Variable', sans-serif; font-stretch: 125%; font-weight: 800; letter-spacing: 0.06em; font-size: 15px; color: #eef2f8; } .ds-nav-mark span { color: #2a9dff; } .ds-nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; } .ds-nav-links a { display: block; padding: 8px 16px; border-radius: 9999px; font-family: 'Geist Variable', system-ui, sans-serif; font-size: 14px; color: #9aa4b6; text-decoration: none; transition: color 300ms; } .ds-nav-links a:hover { color: #eef2f8; } .ds-nav-links a.is-active { color: #eef2f8; background: rgb(255 255 255 / 0.08); box-shadow: 0 0 0 1px rgb(255 255 255 / 0.1); } .ds-nav-links a:focus-visible { outline: 2px solid #19d3ff; outline-offset: 3px; } .ds-nav-cta { padding: 10px 20px; border-radius: 9999px; background: #eef2f8; color: #04060b; font-family: 'Geist Variable', system-ui, sans-serif; font-size: 14px; font-weight: 500; text-decoration: none; transition: background-color 300ms; } .ds-nav-cta:hover { background: #fff; } .ds-nav-cta:active { transform: scale(0.98); }"
+    },
+    {
+      "name": "Glass Card with Spotlight Border",
+      "kind": "card",
+      "refersTo": "card-glass",
+      "description": "Service and founder cards: glass material, 24px radius, pointer-following cyan border light on hover.",
+      "html": "<article class=\"ds-card\" style=\"--mx:30%;--my:20%\"><h3 class=\"ds-card-title\">Applications sur mesure</h3><p class=\"ds-card-text\">Des outils métier complets, du formulaire à la base de données.</p></article>",
+      "css": ".ds-card { position: relative; isolation: isolate; max-width: 420px; padding: 28px; border-radius: 24px; background: linear-gradient(180deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025)); border: 1px solid rgb(255 255 255 / 0.1); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 24px 60px -24px rgb(0 0 0 / 0.7); backdrop-filter: blur(18px) saturate(140%); color: #eef2f8; } .ds-card::before { content: ''; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; background: radial-gradient(420px circle at var(--mx) var(--my), rgb(25 211 255 / 0.75), rgb(21 96 240 / 0.35) 35%, transparent 70%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1); pointer-events: none; } .ds-card::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: radial-gradient(520px circle at var(--mx) var(--my), rgb(42 157 255 / 0.09), transparent 60%); opacity: 0; transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1); pointer-events: none; } .ds-card:hover::before, .ds-card:hover::after, .ds-card:focus-within::before { opacity: 1; } .ds-card-title { margin: 0; font-family: 'Archivo Variable', sans-serif; font-stretch: 118%; font-weight: 700; letter-spacing: -0.035em; line-height: 1.02; font-size: 28px; } .ds-card-text { margin: 12px 0 0; color: #9aa4b6; line-height: 1.625; font-family: 'Geist Variable', system-ui, sans-serif; }"
+    },
+    {
+      "name": "Project Case",
+      "kind": "card",
+      "refersTo": "card-case",
+      "description": "Night-solid 28px case with an azure top-edge rule and a royal-blue halo held only while in front.",
+      "html": "<article class=\"ds-case\"><div class=\"ds-case-halo\"></div><h3 class=\"ds-case-title\">Amsa Shop</h3><p class=\"ds-case-sector\">Mode &amp; prêt-à-porter</p><p class=\"ds-case-text\">Faire découvrir les nouveautés d’une boutique et permettre de commander sans se déplacer.</p></article>",
+      "css": ".ds-case { position: relative; overflow: hidden; max-width: 560px; padding: 48px; border-radius: 28px; border: 1px solid rgb(255 255 255 / 0.1); background: #080b13; box-shadow: 0 -24px 80px -40px rgb(0 0 0 / 0.9); color: #eef2f8; } .ds-case::before { content: ''; position: absolute; left: 40px; right: 40px; top: 0; height: 1px; background: linear-gradient(90deg, transparent, rgb(42 157 255 / 0.7), transparent); } .ds-case-halo { position: absolute; top: -192px; left: 10%; width: 80%; height: 420px; border-radius: 9999px; background: rgb(21 96 240 / 0.25); filter: blur(110px); pointer-events: none; } .ds-case-title { position: relative; margin: 0; font-family: 'Archivo Variable', sans-serif; font-stretch: 118%; font-weight: 700; letter-spacing: -0.035em; line-height: 1.02; font-size: 36px; } .ds-case-sector { position: relative; margin: 8px 0 0; font-size: 14px; color: #2a9dff; font-family: 'Geist Variable', system-ui, sans-serif; } .ds-case-text { position: relative; margin: 24px 0 0; max-width: 46ch; color: #9aa4b6; line-height: 1.625; font-family: 'Geist Variable', system-ui, sans-serif; }"
+    },
+    {
+      "name": "Media Frame",
+      "kind": "custom",
+      "description": "16px capture frame with window chrome and Geist Mono title.",
+      "html": "<figure class=\"ds-frame\"><div class=\"ds-frame-bar\"><i></i><i></i><i></i><span>Amsa Shop</span></div><div class=\"ds-frame-body\"></div></figure>",
+      "css": ".ds-frame { margin: 0; max-width: 480px; overflow: hidden; border-radius: 16px; border: 1px solid rgb(255 255 255 / 0.1); background: #04060b; box-shadow: 0 30px 80px -30px rgb(0 0 0 / 0.9); } .ds-frame-bar { display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 14px; border-bottom: 1px solid rgb(255 255 255 / 0.07); background: rgb(255 255 255 / 0.04); } .ds-frame-bar i { width: 10px; height: 10px; border-radius: 9999px; background: rgb(255 255 255 / 0.15); } .ds-frame-bar span { margin: 0 auto; padding-right: 32px; font-family: 'Geist Mono Variable', ui-monospace, monospace; font-size: 11px; color: #7d879a; } .ds-frame-body { aspect-ratio: 16 / 10; background: linear-gradient(180deg, #0d121c, #04060b); }"
+    },
+    {
+      "name": "Status Pill",
+      "kind": "chip",
+      "description": "Live state: cyan pill with a pulsing cyan dot.",
+      "html": "<span class=\"ds-status\"><span class=\"ds-dot\"></span>En ligne</span>",
+      "css": ".ds-status { display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; border-radius: 9999px; background: rgb(25 211 255 / 0.1); color: #19d3ff; font-family: 'Geist Variable', system-ui, sans-serif; font-size: 12px; } .ds-dot { position: relative; width: 6px; height: 6px; border-radius: 9999px; background: #19d3ff; box-shadow: 0 0 12px rgb(25 211 255 / 0.9); } .ds-dot::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #19d3ff; animation: ds-pouls 2.4s cubic-bezier(0.16,1,0.3,1) infinite; } @keyframes ds-pouls { from { transform: scale(1); opacity: 0.7; } to { transform: scale(2.6); opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-dot::after { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Only Light in a Black Room",
+    "overview": "HAPPOTECH is a near-black room with one light source: the blue-to-cyan gradient of the H monogram. The light is born behind the mark in the hero, follows the visitor's pointer, is handed to the front project card as the cases stack, draws the method line as the page scrolls, and closes the page in the full-measure wordmark. Everything else (glass, text, captures) is seen by that light rather than coloured by it.\n\nThe system is dark only, calm and product-grade: generous section rhythm, centred or 7/5 split compositions inside one 1152px container, glass panels with a one-pixel white edge, pill-shaped controls, and real project captures as the only imagery. Motion is exponential-out and slow (0.8 to 1s entrances), always tied to a cause: the pointer, the scroll position, or the moment a step is reached. With reduced motion, every one of those effects collapses to its final state.\n\nThe system refuses the purple-blob AI portfolio: no second accent hue, no invented statistics, no decorative gradients as surfaces.",
+    "keyCharacteristics": [
+      "Near-black ink ground (encre) with two slightly raised night tones for cards and fallbacks.",
+      "One accent family (royal blue, azure, cyan) used as light: halos, 1px rules, focus rings, key words, status dots.",
+      "Archivo at expanded width (118% for headings, 125% for lettering) echoes the wordmark; Geist carries reading text; Geist Mono carries small labels.",
+      "Glass panels (translucent white gradient, 1px white edge, inner top highlight, 18px backdrop blur).",
+      "Pill controls, 24px cards, 16px media frames.",
+      "Light that follows cause: pointer, scroll, reached state."
+    ],
+    "rules": [
+      { "name": "The One Light Rule", "body": "The blue-to-cyan family is the only hue in the interface. It appears as light (halo, 1px rule, glow, focus, key word, dot), never as a broad flat fill of a surface. Project captures and client logos are the only other colour on the page.", "section": "colors" },
+      { "name": "The Handed Light Rule", "body": "A light belongs to one object at a time. In the stacked project cases, the front card holds the halo at full strength and the cards behind drop to 15%; in the hero the halo fades with scroll. Do not light several siblings at once.", "section": "colors" },
+      { "name": "The Monochrome Capture Rule", "body": "On hover-capable devices, service captures are shown greyscale under a royal-blue colour wash and return to true colour on hover of their card. On touch devices they stay in true colour. Project case captures are always true colour.", "section": "colors" },
+      { "name": "The Sentence-Case Heading Rule", "body": "Headings are sentence case so long French titles stay legible on two lines and on phones. Expanded capitals are reserved for lettering moments (wordmark, design stack, closing band).", "section": "typography" },
+      { "name": "The Wordmark Width Rule", "body": "Archivo is never set at normal width. Headings use `.titre` (118%); lettering and monograms go to 125%; card sub-headings sit at 110 to 112%.", "section": "typography" },
+      { "name": "The Glass Edge Rule", "body": "Glass is always the full material: translucent white gradient (7.5% to 2.5%), 1px white edge at 10%, inner top highlight, 18px blur with 140% saturation. Under reduced transparency it becomes opaque Slate with no blur. Never a bare blur without the edge.", "section": "elevation" },
+      { "name": "The Spotlight Border Rule", "body": "Glass cards that the visitor can explore (service cards, founder cards) carry a pointer-following border light: a 1px cyan-to-blue radial ring and a faint 9% azure wash under the pointer, fading in over 0.4s on hover or focus-within.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** keep every accent inside the blue-to-cyan family (bleu-roi, azur, cyan-signal) and use it as light: halo, 1px rule, focus, key word, dot.",
+      "**Do** build raised surfaces from the full glass material or Night solid, with 1px white edges at 7 to 15% alpha.",
+      "**Do** use pills for all controls and tags, 24px for cards, 16px for media.",
+      "**Do** set headings in Archivo at 118% width, 700, -0.035em, sentence case; keep expanded capitals for lettering moments.",
+      "**Do** use Geist Mono 11px only for small labels and technical tags.",
+      "**Do** tie motion to a cause (pointer, scroll, reached state), ease with `cubic-bezier(0.16, 1, 0.3, 1)`, and resolve to the final state under reduced motion.",
+      "**Do** show real project captures only, framed at 16px; monochrome-and-blue under the light on hover-capable devices for services, true colour on hover and on touch."
+    ],
+    "donts": [
+      "**Don't** introduce a second accent hue (no purple, no warm accent) or use the gradient as a flat fill for a panel or section.",
+      "**Don't** light several siblings at once; the light is handed from object to object.",
+      "**Don't** use glass without its 1px edge and inner highlight, or keep blur when reduced transparency is requested.",
+      "**Don't** set Archivo at normal width or set long headings in capitals.",
+      "**Don't** add square-cornered controls or hard offset shadows; shadows are long, soft and black, or part of the light.",
+      "**Don't** add a light theme; the ground is always Ink."
+    ]
+  }
+}

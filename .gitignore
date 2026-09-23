@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+.env
+
+# Captures de revue impeccable (régénérables)
+.impeccable/review/
+
+# Pages intermédiaires du générateur d’imprimés
+print/*.html
