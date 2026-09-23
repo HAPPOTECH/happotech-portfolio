@@ -11,7 +11,7 @@
  * QR CODE : tant que le portfolio n'est pas en ligne, le QR est provisoire.
  * Une fois le site déployé, renseigner son adresse ci-dessous et relancer la commande.
  */
-const URL_PORTFOLIO = ''; // ex. 'https://happotech.vercel.app'
+const URL_PORTFOLIO = 'https://happotech-portfolio.vercel.app';
 
 import { spawn } from 'node:child_process';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
